@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="page  no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Книга</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+</head>
+
+<body class="page"><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header">
+        <div class="page-header__inner"><a class="page-header__logo" href="/">Book Store</a>
+          <p class="page-header__open-time"> с 9:00 до 19:00</p>
+          <nav class="main-nav"><button class="burger main-nav__burger" aria-label="Показать меню"><span></span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="index.html">Книги</a></li>
+              <li class="main-nav__item main-nav__item--activ"><a href="recommendations.html">Рекомендации</a></li>
+              <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+              <li class="main-nav__item main-nav__item--phone"><a href="tel:+78005008020"><svg width="16" height="16">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg><span class="main-nav__phone-number">+7 800 500-80-20</span></a></li><a class="page-header__cart"><svg width="16" height="16">
+                  <use xlink:href="img/sprite.svg#cart"></use>
+                </svg></a>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="book-block">
+        <div class="book-block__images">
+          <div class="preview"><img class="preview__screen" src="img/background/screen.png" alt="screen"><img class="preview__screen" src="img/background/screen.png" alt="screen"><img class="preview__screen" src="img/background/screen.png" alt="screen"></div>
+          <div class="book__img"><img class="book__img-cover" src="img/books/superpotrebiteli.png" alt="Суперпотребители"></div>
+        </div>
+        <div class="book-block__header">
+          <p class="book__info-author">Эдди Юн</p>
+          <h2 class="book__info-name">Суперпотребители</h2>
+          <p class="book__info-preview">Кто это и почему они так важны для вашего бизнеса</p>
+        </div>
+        <div class="book-block__info">
+          <table class="book__table">
+            <tr>
+              <td class="book__table-key">Артикул:</td>
+              <td class="book__table-val">1830720</td>
+            </tr>
+            <tr>
+              <td class="book__table-key">В наличии:</td>
+              <td class="book__table-val">5 шт.</td>
+            </tr>
+            <tr>
+              <td class="book__table-key">Издательство:</td>
+              <td class="book__table-val">МИФ</td>
+            </tr>
+            <tr>
+              <td class="book__table-key">Цена:</td>
+              <td class="book__table-val">800 р.</td>
+            </tr>
+          </table><a class="btn">Добавить в корзину</a>
+          <div class="book__like"><button class="btn__heart"><svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg></button>
+            <p class="book__like-text">20 людям понравилась эта книга</p>
+          </div>
+        </div>
+        <div class="book-block__desc">
+          <h2 class="book__desc-title">Короткое описание</h2>
+          <p class="book__desc-text">В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах.</p><a class="book__desc-link" href="index.html">Показать полностью</a>
+          <div class="book__desc-like"><button class="social__btn" type="button"><svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg></button><span class="social__btn__num">3</span><button class="social__btn" type="button"><svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg></button><span class="social__btn__num">8</span><button class="social__btn" type="button"><svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#like"></use>
+              </svg></button><span class="social__btn__num">13</span><button class="social__btn" type="button"><svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#dislike"></use>
+              </svg></button><span class="social__btn__num">4</span></div>
+        </div>
+      </div>
+      <div class="more-books">
+        <h2 class="more-books__title">Книги по тематике</h2><a class="more-books__link" href="index.html">Больше книг по теме</a>
+        <div class="more-books__block">
+          <article class="mini-card"><a class="mini-card__inner" href="book.html"><img class="mini-card__pict" src="img/books/book-lateralnaya-logika.jpg" alt="Латеральная логика" />
+              <h3 class="mini-card__title">Латеральная логика</h3>
+              <p class="mini-card__descr">Головоломный путь к нестардартному мышлению</p>
+            </a></article>
+          <article class="mini-card"><a class="mini-card__inner" href="book.html"><img class="mini-card__pict" src="img/books/putevoditel-po-lzhi.png" alt="Путеводитель по лжи" />
+              <h3 class="mini-card__title">Путеводитель по лжи</h3>
+              <p class="mini-card__descr">Критическое мышление в эпоху постправды</p>
+            </a></article>
+          <article class="mini-card"><a class="mini-card__inner" href="book.html"><img class="mini-card__pict" src="img/books/dao-fiziki.png" alt="Дао физики" />
+              <h3 class="mini-card__title">Дао физики</h3>
+              <p class="mini-card__descr">Исследование параллей между современной физикой и восточной философией</p>
+            </a></article>
+          <article class="mini-card"><a class="mini-card__inner" href="book.html"><img class="mini-card__pict" src="img/books/book-ne-ochevidno.jpg" alt="Не очевидно" />
+              <h3 class="mini-card__title">Не очевидно</h3>
+              <p class="mini-card__descr">Как выявлять тренды раньше других</p>
+            </a></article>
+        </div>
+      </div>
+      <div class="banner">
+        <h2 class="banner__header">Мы открыли для вас уютную библиотеку</h2>
+        <p class="banner__descr">Приходите к нам по адресу Никитская 10, каждый день с 10:00 до 18:00</p>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__inner"><a class="logo" href="/">Book Store</a>
+        <p class="page-footer__open-time"> с 9:00 до 19:00</p>
+        <nav class="main-nav main-nav--footer">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Книги</a></li>
+            <li class="main-nav__item"><a href="reco.html">Рекомендации</a></li>
+            <li class="main-nav__item main-nav__item--contacts"><a href="contacts.html">Контакты</a></li>
+            <li class="main-nav__item main-nav__item--phone"><a href="tel:+78005008020"><svg width="16" height="16"></svg><span class="main-nav__phone-number">+7 800 500-80-20</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
