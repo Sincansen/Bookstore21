@@ -1,0 +1,25 @@
+.contacts {
+
+  &__title {
+    margin:0 40px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    margin: 0 40px;
+  }
+
+  &__block-item {
+    margin-right: 75px;
+    margin-left: -15px;
+  }
+
+  &__map {
+    margin: 0 40px;
+  }
+
+  &__form {
+    margin: 0 40px;
+  }
+}

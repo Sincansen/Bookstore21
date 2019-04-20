@@ -1,0 +1,33 @@
+.slider {
+  background-color: $gray-light;
+  display: flex;
+  height: 400px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &__wrapper-text {
+    margin: 0 auto;
+  }
+
+  &__wrapper-text-title {
+    margin-top: 60px;
+    width: 47%;
+  }
+
+  &__wrapper-block-text {
+    border: 4px solid $gray-lighten;
+    width: 75%;
+  }
+
+  &__image {
+    width: 368px;
+    height: auto;
+  }
+}

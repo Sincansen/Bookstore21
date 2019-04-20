@@ -1,0 +1,15 @@
+.pagination {
+  &__block {
+    flex-direction: row;
+  }
+
+  &__block-item {
+    display: inline-block;
+    margin: 0 0.5%;
+
+    &:hover {
+      background-color: $light-color;
+
+    }
+  }
+}

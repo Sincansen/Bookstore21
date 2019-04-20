@@ -1,0 +1,31 @@
+.page-header {
+  display: block;
+  background-color: #fff;
+
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+}
+
+  * a {
+    display: flex;
+    align-self: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $gray-dark;
+    font-weight: bold;
+  }
+
+  * p {
+    display: flex;
+    color: $gray;
+
+  }
+
+  &__cart {
+    color: $gray-dark;
+    padding: 0 20px;
+    text-decoration: none;
+  }
+}

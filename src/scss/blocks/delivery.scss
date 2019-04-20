@@ -1,0 +1,25 @@
+.delivery {
+  margin: 0 auto;
+  margin: 0 $indent;
+  border: 5px solid $gray;
+
+  &__title {
+  margin-left: 20px;
+  }
+
+  &__descr {
+  margin-left: 20px;
+  }
+
+  &__block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  &__block-item {
+    margin: 5px 5px;
+    text-align: center;
+  }
+}
