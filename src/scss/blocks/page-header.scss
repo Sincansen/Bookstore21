@@ -1,6 +1,7 @@
 .page-header {
-  display: block;
+  //display: block;
   background-color: #fff;
+  z-index: 1;
 
 
   &__inner {
@@ -8,13 +9,18 @@
     justify-content: space-around;
 }
 
-  * a {
+  a {
     display: flex;
     align-self: center;
     text-transform: uppercase;
     text-decoration: none;
-    color: $gray-dark;
+    //color: $gray-dark;
     font-weight: bold;
+
+      &:hover,
+      &:focus {
+        color: $main-color;
+    }
   }
 
   * p {
@@ -27,5 +33,18 @@
     color: $gray-dark;
     padding: 0 20px;
     text-decoration: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__open-time {
+    font-size: 14px;
+    line-height: 30px;
+
+    @media (min-width: $screen-xs) and (max-height: $screen-sm) {
+      display: none;
+    }
   }
 }

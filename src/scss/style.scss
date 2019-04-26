@@ -7,11 +7,15 @@
 @import 'blocks/catalog';
 @import 'blocks/contacts';
 @import 'blocks/delivery';
-@import 'blocks/field-checkbox.scss';
-@import 'blocks/field-text.scss';
+@import 'blocks/field-action';
+@import 'blocks/field-checkbox';
+@import 'blocks/field-text';
+@import 'blocks/fonts';
 @import 'blocks/form.scss';
 @import 'blocks/logo';
+@import 'blocks/main-burger';
 @import 'blocks/main-nav';
+@import 'blocks/main';
 @import 'blocks/mini-card';
 @import 'blocks/mixins';
 @import 'blocks/main-nav';
@@ -23,7 +27,9 @@
 @import 'blocks/preview';
 @import 'blocks/recommend';
 @import 'blocks/slider';
+@import 'blocks/social-btn';
 @import 'blocks/tabs';
+@import 'blocks/toggler';
 
 @import 'blocks/page';
 

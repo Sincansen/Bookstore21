@@ -16,44 +16,52 @@
   <div class="page__inner">
     <div class="page__content">
       <header class="page-header">
-        <div class="page-header__inner"><a class="page-header__logo" href="/">Book Store</a>
+        <div class="page-header__inner"><a class="page-header__logo" href="index.html"><svg width="127" height="14">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg></a>
           <p class="page-header__open-time"> с 9:00 до 19:00</p>
-          <nav class="main-nav"><button class="burger main-nav__burger" aria-label="Показать меню"><span></span></button>
+          <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="index.html">Книги</a></li>
               <li class="main-nav__item main-nav__item--activ"><a href="recommendations.html">Рекомендации</a></li>
               <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
               <li class="main-nav__item main-nav__item--phone"><a href="tel:+78005008020"><svg width="16" height="16">
                     <use xlink:href="img/sprite.svg#phone"></use>
-                  </svg><span class="main-nav__phone-number">+7 800 500-80-20</span></a></li><a class="page-header__cart"><svg width="16" height="16">
-                  <use xlink:href="img/sprite.svg#cart"></use>
-                </svg></a>
-            </ul>
+                  </svg><span class="main-nav__phone-number">+7 800 500-80-20</span></a></li>
+            </ul><a class="page-header__cart"><svg width="16" height="16">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg></a>
           </nav>
+          <nav class="main-burger"><a class="toggler" id="toggler" href=""><span></span></a></nav>
+          <ul class="main" id="main">
+            <li class="main__item"><a href="index.html">Книги</a></li>
+            <li class="main__item"><a href="recommendations.html">Рекомендации</a></li>
+            <li class="main__item"><a href="contacts.html">Контакты</a></li>
+            <li class="main__item main__phone"><a href="tel: +78005008020">8 800 500-80-20</a></li>
+          </ul>
         </div>
       </header>
-      <div class="slider">
-        <div class="slider__wrapper">
-          <div class="slider__wrapper-block">
-            <p class="slider__wrapper-text-title">Новое поступление книги "Симпсоны и их математические секреты</p>
-            <div class="slider__wrapper-block-text">
-              <h2 class="slider__wrapper-block-text-descr">Для поклонников сериала "Симпсоны" и для всех, кому интересна математика.</h2><a class="slider__wrapper-block-text-link" href="/">Хочу узнать о книге больше</a>
+      <section class="slider">
+        <div class="slider__inner">
+          <div class="slider__item">
+            <p class="slider__item-title">Новое поступление книги "Симпсоны и их математические секреты</p>
+            <div class="slider__item-text">
+              <p class="slider__item-descr">Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.</p><a class="slider__item-link" href="/">Хочу узнать о книге больше</a>
             </div>
-          </div>
-          <div class="slider__wrapper-picture"><img class="slider__image" src="img/books/book-simpsony-i-ih-matematicheskie-sekrety.jpg"></div>
+          </div><img class="slider__image" src="img/books/book-simpsony-i-ih-matematicheskie-sekrety.jpg">
         </div>
-      </div>
-      <div class="tabs">
-        <ul class="tabs__block">
-          <li class="tabs__block-item"><a class="tabs__block-item-text" href="/">Все</a></li>
-          <li class="tabs__block-item"><a class="tabs__block-item-text" href="/">Маркетинг</a></li>
-          <li class="tabs__block-item"><a class="tabs__block-item-text" href="/">Научпоп</a></li>
-          <li class="tabs__block-item"><a class="tabs__block-item-text" href="/">Бизнес</a></li>
-          <li class="tabs__block-item"><a class="tabs__block-item-text" href="/">Творчество</a></li>
-          <li class="tabs__block-item"><a class="tabs__block-item-text" href="/">Бизнес</a></li>
-        </ul>
-      </div>
-      <div class="catalog">
+      </section>
+      <section class="catalog">
+        <div class="tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item"><a class="tabs__link" href="/">Все</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="/">Маркетинг</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="/">Научпоп</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="/">Бизнес</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="/">Творчество</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="/">Бизнес</a></li>
+          </ul>
+        </div>
         <div class="catalog__block">
           <article class="mini-card"><a class="mini-card__inner" href="book.html"><img class="mini-card__pict" src="img/books/book-lateralnaya-logika.jpg" alt="Латеральная логика" />
               <h3 class="mini-card__title">Латеральная логика</h3>
@@ -95,36 +103,34 @@
               <p class="mini-card__price">365 ₽</p>
             </a></article>
         </div>
-        <div class="pagination">
-          <ul class="pagination__block">
-            <li class="pagination__block-item pagination__block-item--active"><a href="/">1</a></li>
-            <li class="pagination__block-item"><a href="/">2</a></li>
-            <li class="pagination__block-item"><a href="/">3</a></li>
-            <li class="pagination__block-item"><a href="/">4</a></li>
-            <li class="pagination__block-item"><a href="/">5</a></li>
-            <li class="pagination__block-item"><a href="/">...</a></li>
-            <li class="pagination__block-item"><a href="/">10</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="delivery">
+        <div class="pagination"><a class="pagination__item" href="/">1</a><a class="pagination__item" href="/">2</a><a class="pagination__item" href="/">3</a><a class="pagination__item" href="/">4</a><a class="pagination__item" href="/">5</a><span class="pagination__item" href="/">...</span><a class="pagination__item" href="/">10</a></div>
+      </section>
+      <section class="delivery">
         <h2 class="delivery__title">Доставим в любое место</h2>
         <p class="delivery__descr">// Ну почти в любое</p>
         <ul class="delivery__block">
-          <li class="delivery__block-item"><img class="delivery__block-image">
+          <li class="delivery__block-item"><svg width="50" height="50">
+              <use xlink:href="img/sprite.svg#book"></use>
+            </svg>
             <p class="delivery__item-text">Покупайте книги на сайте в любимом формате - бумажные, электронные или аудио.</p>
           </li>
-          <li class="delivery__block-item"><img class="delivery__block-image">
+          <li class="delivery__block-item"><svg width="50" height="50">
+              <use xlink:href="img/sprite.svg#box"></use>
+            </svg>
             <p class="delivery__item-text">Мы подарим вам "Набор читателя" и добавим в посылку.</p>
           </li>
-          <li class="delivery__block-item"><img class="delivery__block-image">
+          <li class="delivery__block-item"><svg width="50" height="50">
+              <use xlink:href="img/sprite.svg#truck"></use>
+            </svg>
             <p class="delivery__item-text">Бесплатно доставляем заказы от 3000 рублей по всей России.</p>
           </li>
-          <li class="delivery__block-item"><img class="delivery__block-image">
+          <li class="delivery__block-item"><svg width="50" height="50">
+              <use xlink:href="img/sprite.svg#pin"></use>
+            </svg>
             <p class="delivery__item-text">Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу бесплатно</p>
           </li>
         </ul>
-      </div>
+      </section>
       <div class="more-books">
         <h2 class="more-books__title">Наши новинки</h2><a class="more-books__link" href="/"> Все новинки</a>
         <div class="more-books__block">
@@ -148,7 +154,9 @@
       </div>
     </div>
     <footer class="page-footer">
-      <div class="page-footer__inner"><a class="logo" href="/">Book Store</a>
+      <div class="page-footer__inner"><a class="logo" href="index.html"><svg width="127" height="14">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg></a>
         <p class="page-footer__open-time"> с 9:00 до 19:00</p>
         <nav class="main-nav main-nav--footer">
           <ul class="main-nav__list">

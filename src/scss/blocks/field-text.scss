@@ -51,4 +51,9 @@
       border-bottom-color: $danger-color;
     }
   }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
 }

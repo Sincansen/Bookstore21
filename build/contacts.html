@@ -16,20 +16,29 @@
   <div class="page__inner">
     <div class="page__content">
       <header class="page-header">
-        <div class="page-header__inner"><a class="page-header__logo" href="/">Book Store</a>
+        <div class="page-header__inner"><a class="page-header__logo" href="index.html"><svg width="127" height="14">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg></a>
           <p class="page-header__open-time"> с 9:00 до 19:00</p>
-          <nav class="main-nav"><button class="burger main-nav__burger" aria-label="Показать меню"><span></span></button>
+          <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="index.html">Книги</a></li>
               <li class="main-nav__item main-nav__item--activ"><a href="recommendations.html">Рекомендации</a></li>
               <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
               <li class="main-nav__item main-nav__item--phone"><a href="tel:+78005008020"><svg width="16" height="16">
                     <use xlink:href="img/sprite.svg#phone"></use>
-                  </svg><span class="main-nav__phone-number">+7 800 500-80-20</span></a></li><a class="page-header__cart"><svg width="16" height="16">
-                  <use xlink:href="img/sprite.svg#cart"></use>
-                </svg></a>
-            </ul>
+                  </svg><span class="main-nav__phone-number">+7 800 500-80-20</span></a></li>
+            </ul><a class="page-header__cart"><svg width="16" height="16">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg></a>
           </nav>
+          <nav class="main-burger"><a class="toggler" id="toggler" href=""><span></span></a></nav>
+          <ul class="main" id="main">
+            <li class="main__item"><a href="index.html">Книги</a></li>
+            <li class="main__item"><a href="recommendations.html">Рекомендации</a></li>
+            <li class="main__item"><a href="contacts.html">Контакты</a></li>
+            <li class="main__item main__phone"><a href="tel: +78005008020">8 800 500-80-20</a></li>
+          </ul>
         </div>
       </header>
       <div class="contacts">
@@ -39,7 +48,7 @@
           <li class="contacts__block-item">с 9:00 до 19:00 ежедневно</li>
           <li class="contacts__block-item">+7(911) 123 45 67</li>
         </ul>
-        <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.4942257789312!2d30.31568031607128!3d59.957124981882956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631492ac25899%3A0x8ff24940c5738c!2sEpic+Skills!5e0!3m2!1sru!2sru!4v1555430434527!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.7707889461567!2d30.278963186892742!3d59.9167901439079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630eec3cc4241%3A0x105f3478905c83e9!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMjAyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMTIx!5e0!3m2!1sru!2sru!4v1556151050630!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
         <div class="contacts__form">
           <h2 class="form__title">Есть вопросы?</h2>
           <div class="form__descr">
@@ -59,7 +68,9 @@
       </div>
     </div>
     <footer class="page-footer">
-      <div class="page-footer__inner"><a class="logo" href="/">Book Store</a>
+      <div class="page-footer__inner"><a class="logo" href="index.html"><svg width="127" height="14">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg></a>
         <p class="page-footer__open-time"> с 9:00 до 19:00</p>
         <nav class="main-nav main-nav--footer">
           <ul class="main-nav__list">

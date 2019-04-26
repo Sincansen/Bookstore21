@@ -1,18 +1,19 @@
-.social-btn {
-  border: 0;
-  background: transparent;
-  color: #000;
-  padding: 0;
-  width: 40px;
-  height: 40px;
+.social__btn {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  //color: $main-color;
 
   &:hover,
   &:focus {
-    svg{
-      fill: #f00;
-    }
+    color: $main-color;
   }
-  svg {
-    fill: #ff0;
+
+  span {
+    padding: 0 10px;
+
   }
 }
+

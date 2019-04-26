@@ -16,61 +16,68 @@
   <div class="page__inner">
     <div class="page__content">
       <header class="page-header">
-        <div class="page-header__inner"><a class="page-header__logo" href="/">Book Store</a>
+        <div class="page-header__inner"><a class="page-header__logo" href="index.html"><svg width="127" height="14">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg></a>
           <p class="page-header__open-time"> с 9:00 до 19:00</p>
-          <nav class="main-nav"><button class="burger main-nav__burger" aria-label="Показать меню"><span></span></button>
+          <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="index.html">Книги</a></li>
               <li class="main-nav__item main-nav__item--activ"><a href="recommendations.html">Рекомендации</a></li>
               <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
               <li class="main-nav__item main-nav__item--phone"><a href="tel:+78005008020"><svg width="16" height="16">
                     <use xlink:href="img/sprite.svg#phone"></use>
-                  </svg><span class="main-nav__phone-number">+7 800 500-80-20</span></a></li><a class="page-header__cart"><svg width="16" height="16">
-                  <use xlink:href="img/sprite.svg#cart"></use>
-                </svg></a>
-            </ul>
+                  </svg><span class="main-nav__phone-number">+7 800 500-80-20</span></a></li>
+            </ul><a class="page-header__cart"><svg width="16" height="16">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg></a>
           </nav>
+          <nav class="main-burger"><a class="toggler" id="toggler" href=""><span></span></a></nav>
+          <ul class="main" id="main">
+            <li class="main__item"><a href="index.html">Книги</a></li>
+            <li class="main__item"><a href="recommendations.html">Рекомендации</a></li>
+            <li class="main__item"><a href="contacts.html">Контакты</a></li>
+            <li class="main__item main__phone"><a href="tel: +78005008020">8 800 500-80-20</a></li>
+          </ul>
         </div>
       </header>
-      <div class="book-block">
-        <div class="book-block__images">
-          <div class="preview"><img class="preview__screen" src="img/background/screen.png" alt="screen"><img class="preview__screen" src="img/background/screen.png" alt="screen"><img class="preview__screen" src="img/background/screen.png" alt="screen"></div>
-          <div class="book__img"><img class="book__img-cover" src="img/books/superpotrebiteli.png" alt="Суперпотребители"></div>
-        </div>
-        <div class="book-block__header">
-          <p class="book__info-author">Эдди Юн</p>
-          <h2 class="book__info-name">Суперпотребители</h2>
-          <p class="book__info-preview">Кто это и почему они так важны для вашего бизнеса</p>
-        </div>
-        <div class="book-block__info">
+      <article class="book">
+        <header class="book__header">
+          <h3 class="book__author">Эдди Юн</h3>
+          <h1 class="book__title">Суперпотребители</h1>
+          <p class="book__mini-descr">Кто это и почему они важны для вашего бизнеса</p>
+        </header>
+        <div class="book__images"><img class="book__img-cover" src="img/books/superpotrebiteli.png" alt="" width="360px" height="507px"></div>
+        <div class="book__pages"><img class="page" src="img/background/screen.png" alt="" width="110px" height="158px"><img class="page" src="img/background/screen.png" alt="" width="" height=""><img class="page" src="img/background/screen.png" alt="" width="" height=""></div>
+        <div class="book__info">
           <table class="book__table">
             <tr>
               <td class="book__table-key">Артикул:</td>
-              <td class="book__table-val">1830720</td>
+              <td class="book__table-val-info">1830720</td>
             </tr>
             <tr>
               <td class="book__table-key">В наличии:</td>
-              <td class="book__table-val">5 шт.</td>
+              <td class="book__table-val-info">5 шт.</td>
             </tr>
             <tr>
               <td class="book__table-key">Издательство:</td>
-              <td class="book__table-val">МИФ</td>
+              <td class="book__table-val-info">Издал</td>
             </tr>
             <tr>
               <td class="book__table-key">Цена:</td>
-              <td class="book__table-val">800 р.</td>
+              <td class="book__table-val-price">800 р.</td>
             </tr>
-          </table><a class="btn">Добавить в корзину</a>
-          <div class="book__like"><button class="btn__heart"><svg width="20" height="20">
-                <use xlink:href="img/sprite.svg#heart"></use>
-              </svg></button>
-            <p class="book__like-text">20 людям понравилась эта книга</p>
-          </div>
+          </table><button class="btn">Добавить в корзину</button><input class="btn__input" type="text" value="" size="4"><span>шт.</span><button class="btn__heart"><svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg><span>20 людям понравилась эта книга</span></button>
         </div>
-        <div class="book-block__desc">
-          <h2 class="book__desc-title">Короткое описание</h2>
-          <p class="book__desc-text">В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах.</p><a class="book__desc-link" href="index.html">Показать полностью</a>
-          <div class="book__desc-like"><button class="social__btn" type="button"><svg width="20" height="20">
+        <div class="book__descr">
+          <h4 class="book__title">Короткое описание</h4>
+          <p>В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
+          <p>Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты c копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.</p><button class="swipe__btn">Показать полностью<svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#down"></use>
+            </svg></button>
+          <div class="book__descr-like"><button class="social__btn" type="button"><svg width="20" height="20">
                 <use xlink:href="img/sprite.svg#facebook"></use>
               </svg></button><span class="social__btn__num">3</span><button class="social__btn" type="button"><svg width="20" height="20">
                 <use xlink:href="img/sprite.svg#vk"></use>
@@ -80,7 +87,7 @@
                 <use xlink:href="img/sprite.svg#dislike"></use>
               </svg></button><span class="social__btn__num">4</span></div>
         </div>
-      </div>
+      </article>
       <div class="more-books">
         <h2 class="more-books__title">Книги по тематике</h2><a class="more-books__link" href="index.html">Больше книг по теме</a>
         <div class="more-books__block">
@@ -108,7 +115,9 @@
       </div>
     </div>
     <footer class="page-footer">
-      <div class="page-footer__inner"><a class="logo" href="/">Book Store</a>
+      <div class="page-footer__inner"><a class="logo" href="index.html"><svg width="127" height="14">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg></a>
         <p class="page-footer__open-time"> с 9:00 до 19:00</p>
         <nav class="main-nav main-nav--footer">
           <ul class="main-nav__list">

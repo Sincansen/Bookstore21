@@ -5,44 +5,50 @@ block meta
   meta(name='description', content='')
 
 block content
-  .book-block
 
-    .book-block__images
-      .preview
-        img.preview__screen(src='img/background/screen.png', alt='screen')
-        img.preview__screen(src='img/background/screen.png', alt='screen')
-        img.preview__screen(src='img/background/screen.png', alt='screen')
-      .book__img
-        img.book__img-cover(src='img/books/superpotrebiteli.png', alt='Суперпотребители')
-    .book-block__header
-      p.book__info-author Эдди Юн
-      h2.book__info-name Суперпотребители
-      p.book__info-preview Кто это и почему они так важны для вашего бизнеса
-    .book-block__info
+  article.book
+    header.book__header
+      h3.book__author Эдди Юн
+      h1.book__title Суперпотребители
+      p.book__mini-descr Кто это и почему они важны для вашего бизнеса
+    .book__images
+      img.book__img-cover(src='img/books/superpotrebiteli.png', alt='', width='360px', height='507px')
+    .book__pages
+      img.page(src='img/background/screen.png', alt='', width='110px', height='158px')
+      img.page(src='img/background/screen.png', alt='', width='', height='')
+      img.page(src='img/background/screen.png', alt='', width='', height='')
+    .book__info
       table.book__table
         tr
           td.book__table-key Артикул:
-          td.book__table-val 1830720
+          td.book__table-val-info 1830720
         tr
           td.book__table-key В наличии:
-          td.book__table-val 5 шт.
+          td.book__table-val-info 5 шт.
         tr
           td.book__table-key Издательство:
-          td.book__table-val МИФ
+          td.book__table-val-info Издал
         tr
           td.book__table-key Цена:
-          td.book__table-val 800 р.
-      a.btn Добавить в корзину
-      .book__like
-        button.btn__heart
-          svg(width='20', height='20')
-            use(xlink:href='img/sprite.svg#heart')
-        p.book__like-text 20 людям понравилась эта книга
-    .book-block__desc
-      h2.book__desc-title Короткое описание
-      p.book__desc-text В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах.
-      a.book__desc-link(href="index.html") Показать полностью
-      .book__desc-like
+          td.book__table-val-price 800 р.
+      button.btn Добавить в корзину
+      input.btn__input(type='text', value='', size='4')
+      span шт.
+      button.btn__heart
+       svg(width='20', height='20')
+         use(xlink:href='img/sprite.svg#heart')
+       span 20 людям понравилась эта книга
+
+    .book__descr
+      h4.book__title Короткое описание
+      p В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.
+      p Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты c копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.
+
+      button.swipe__btn Показать полностью
+        svg(width='20', height='20')
+          use(xlink:href='img/sprite.svg#down')
+
+      .book__descr-like
         button.social__btn(type='button')
           svg(width='20', height='20')
             use(xlink:href='img/sprite.svg#facebook')
@@ -59,6 +65,7 @@ block content
           svg(width='20', height='20')
             use(xlink:href='img/sprite.svg#dislike')
         span.social__btn__num 4
+
   .more-books
     h2.more-books__title Книги по тематике
     a.more-books__link(href="index.html") Больше книг по теме

@@ -5,34 +5,33 @@ block meta
   meta(name='description', content='')
 
 block content
-  .slider
-    .slider__wrapper
 
-      .slider__wrapper-block
-        p.slider__wrapper-text-title Новое поступление книги "Симпсоны и их математические секреты
-        .slider__wrapper-block-text
-          h2.slider__wrapper-block-text-descr Для поклонников сериала "Симпсоны" и для всех, кому интересна математика.
-          a.slider__wrapper-block-text-link(href="/") Хочу узнать о книге больше
-      .slider__wrapper-picture
-        img.slider__image(src="img/books/book-simpsony-i-ih-matematicheskie-sekrety.jpg")
+  section.slider
+    .slider__inner
+      .slider__item
+        p.slider__item-title Новое поступление книги "Симпсоны и их математические секреты
+        .slider__item-text
+          p.slider__item-descr Для поклонников сериала «Симпсоны»   и для всех, кому интересна математика.
+          a.slider__item-link(href="/") Хочу узнать о книге больше
+      img.slider__image(src="img/books/book-simpsony-i-ih-matematicheskie-sekrety.jpg")
 
 
-  .tabs
-    ul.tabs__block
-      li.tabs__block-item
-        a.tabs__block-item-text(href='/') Все
-      li.tabs__block-item
-        a.tabs__block-item-text(href='/') Маркетинг
-      li.tabs__block-item
-        a.tabs__block-item-text(href='/') Научпоп
-      li.tabs__block-item
-        a.tabs__block-item-text(href='/') Бизнес
-      li.tabs__block-item
-        a.tabs__block-item-text(href='/') Творчество
-      li.tabs__block-item
-        a.tabs__block-item-text(href='/') Бизнес
+  section.catalog
+    .tabs
+      ul.tabs__list
+        li.tabs__item
+          a.tabs__link(href='/') Все
+        li.tabs__item
+          a.tabs__link(href='/') Маркетинг
+        li.tabs__item
+          a.tabs__link(href='/') Научпоп
+        li.tabs__item
+          a.tabs__link(href='/') Бизнес
+        li.tabs__item
+          a.tabs__link(href='/') Творчество
+        li.tabs__item
+          a.tabs__link(href='/') Бизнес
 
-  .catalog
     .catalog__block
       +mini-card('Латеральная логика', 'book.html', 'img/books/book-lateralnaya-logika.jpg', 'Головоломный путь к нестардартному мышлению', '500 ₽')
       +mini-card('Путеводитель по лжи', 'book.html', 'img/books/putevoditel-po-lzhi.png', 'Критическое мышление в эпоху постправды', '630 ₽')
@@ -44,38 +43,34 @@ block content
       +mini-card('Главное в истории искусств', 'book.html', 'img/books/glavnoe-v-istorii-iskusstv.png', 'Ключевые работы, темы, направления, техники', '365 ₽')
 
     .pagination
-      ul.pagination__block
-        li.pagination__block-item.pagination__block-item--active
-          a(href='/') 1
-        li.pagination__block-item
-          a(href='/') 2
-        li.pagination__block-item
-          a(href='/') 3
-        li.pagination__block-item
-          a(href='/') 4
-        li.pagination__block-item
-          a(href='/') 5
-        li.pagination__block-item
-          a(href='/') ...
-        li.pagination__block-item
-          a(href='/') 10
+      a.pagination__item(href='/') 1
+      a.pagination__item(href='/') 2
+      a.pagination__item(href='/') 3
+      a.pagination__item(href='/') 4
+      a.pagination__item(href='/') 5
+      span.pagination__item(href='/') ...
+      a.pagination__item(href='/') 10
 
-  .delivery
+  section.delivery
     h2.delivery__title Доставим в любое место
     p.delivery__descr // Ну почти в любое
     ul.delivery__block
-        li.delivery__block-item
-          img.delivery__block-image
-          p.delivery__item-text Покупайте книги на сайте в любимом формате - бумажные, электронные или аудио.
-        li.delivery__block-item
-          img.delivery__block-image
-          p.delivery__item-text Мы подарим вам "Набор читателя" и добавим в посылку.
-        li.delivery__block-item
-          img.delivery__block-image
-          p.delivery__item-text Бесплатно доставляем заказы от 3000 рублей по всей России.
-        li.delivery__block-item
-          img.delivery__block-image
-          p.delivery__item-text Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу бесплатно
+      li.delivery__block-item
+        svg(width='50', height='50')
+          use(xlink:href='img/sprite.svg#book')
+        p.delivery__item-text Покупайте книги на сайте в любимом формате - бумажные, электронные или аудио.
+      li.delivery__block-item
+        svg(width='50', height='50')
+          use(xlink:href='img/sprite.svg#box')
+        p.delivery__item-text Мы подарим вам "Набор читателя" и добавим в посылку.
+      li.delivery__block-item
+        svg(width='50', height='50')
+          use(xlink:href='img/sprite.svg#truck')
+        p.delivery__item-text Бесплатно доставляем заказы от 3000 рублей по всей России.
+      li.delivery__block-item
+        svg(width='50', height='50')
+          use(xlink:href='img/sprite.svg#pin')
+        p.delivery__item-text Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу бесплатно
 
   .more-books
     h2.more-books__title Наши новинки

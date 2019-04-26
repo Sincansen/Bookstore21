@@ -24,10 +24,12 @@ html(class='page  no-js', lang='ru')
 
         header.page-header
           .page-header__inner
-            a.page-header__logo(href='/') Book Store
+            a.page-header__logo(href='index.html')
+              svg(width='127', height="14")
+                use(xlink:href='img/sprite.svg#logo')
             p.page-header__open-time  с 9:00 до 19:00
+
             nav.main-nav
-              button.burger.main-nav__burger(aria-label='Показать меню') #[span]
               ul.main-nav__list
                 li.main-nav__item
                   a(href='index.html') Книги
@@ -40,9 +42,22 @@ html(class='page  no-js', lang='ru')
                     svg(width='16', height='16')
                       use(xlink:href='img/sprite.svg#phone')
                     span.main-nav__phone-number +7 800 500-80-20
-                a.page-header__cart
-                  svg(width='16', height='16')
-                    use(xlink:href='img/sprite.svg#cart')
+              a.page-header__cart
+                svg(width='16', height='16')
+                  use(xlink:href='img/sprite.svg#cart')
+
+            nav.main-burger
+              a#toggler.toggler(href='')
+                span
+            ul#main.main
+              li.main__item
+                a(href='index.html') Книги
+              li.main__item
+                a(href='recommendations.html') Рекомендации
+              li.main__item
+                a(href='contacts.html') Контакты
+              li.main__item.main__phone
+                a(href='tel: +78005008020') 8 800 500-80-20
 
         block content
           p Cодержимое
@@ -50,7 +65,9 @@ html(class='page  no-js', lang='ru')
 
       footer.page-footer
         .page-footer__inner
-          a.logo(href='/') Book Store
+          a.logo(href='index.html')
+            svg(width='127', height="14")
+                use(xlink:href='img/sprite.svg#logo')
           p.page-footer__open-time  с 9:00 до 19:00
           nav.main-nav.main-nav--footer
             ul.main-nav__list

@@ -1,5 +1,7 @@
 .main-nav {
 
+  display: flex;
+
   &__burger {
     display: none;
 
@@ -12,6 +14,9 @@
 
   &__list {
     display: flex;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__item {
@@ -30,6 +35,9 @@
     text-transform: lowercase;
     margin-left: 15px;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
   }
 
   &__item a:hover {
